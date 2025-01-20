@@ -209,7 +209,7 @@ const animationTimeline = () => {
       0.2
     )
     .from(
-      ".rashi-dp",
+      ".ashima-dp",
       0.5,
       {
         scale: 3.5,
