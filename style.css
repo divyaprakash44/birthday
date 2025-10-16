@@ -390,23 +390,29 @@ main {
         letter-spacing: 0.2rem;
     }
 
+    /* --- Fully Fluid Countdown Timer for ALL Mobile Sizes --- */
     .countdown {
-        gap: 10px; /* Reduced space between DAYS, HOURS, etc. */
         width: 100%;
-        justify-content: space-evenly; /* Evenly space the items */
+        display: flex;
+        justify-content: space-around; /* Evenly distribute the timer units */
+        gap: 2vw; /* Use viewport width for responsive gaps */
+    }
+    
+    .timer-value-container {
+        gap: 1vw; /* Smaller responsive gap between digits */
     }
 
-    /* Make the individual digit boxes smaller */
+    /* Make the individual digit boxes fluid */
     .digit-box {
-        font-size: 1.5rem; /* Smaller font for the numbers */
-        width: 34px;      /* Reduced width of each number box */
-        padding: 12px 0;  /* Reduced vertical padding */
+        width: 10vw; /* Base width on viewport width */
+        padding: 2.5vw 0; /* Base padding on viewport width */
+        /* Use clamp() to set a minimum, preferred, and maximum font size */
+        font-size: clamp(1.2rem, 7vw, 1.8rem);
     }
-
-    .timer-value {
-        font-size: 1.8rem;
-        width: 70px;
-        padding: 15px 10px;
+    
+    .timer-label {
+        /* Make labels responsive too, with min/max sizes */
+        font-size: clamp(0.6rem, 2.5vw, 0.8rem);
     }
 
     .quote-text {
