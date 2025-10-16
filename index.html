@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+
+    <title>Coming Soon</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=TASA+Orbiter:wght@400..800&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+</head>
+<body id="main-body">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+    <div id="title"></div>
+
+    <div class="top-glow"></div>
+
+    <!--<header>
+        <div class="logo" data-lang-key="company_name">Company Name</div>
+        
+        <div class="language-switcher">
+            <button class="lang-btn active" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="de">DE</button>
+            <button class="lang-btn" data-lang="ti">TI</button>
+            <button class="lang-btn" data-lang="fr">FR</button>
+        </div>
+    </header>-->
+
+    <main>
+        <h1 class="main-title" data-lang-key="coming_soon">COMING SOON</h1>
+
+        <div id="countdown" class="countdown">
+            <div class="timer-box">
+                <div class="timer-value-container">
+                    <span id="days1" class="digit-box">0</span>
+                    <span id="days2" class="digit-box">0</span>
+                </div>
+                <div class="timer-label" data-lang-key="time_days">Days</div>
+            </div>
+            <div class="timer-box">
+                <div class="timer-value-container">
+                    <span id="hours1" class="digit-box">0</span>
+                    <span id="hours2" class="digit-box">0</span>
+                </div>
+                <div class="timer-label" data-lang-key="time_hours">Hours</div>
+            </div>
+            <div class="timer-box">
+                <div class="timer-value-container">
+                    <span id="minutes1" class="digit-box">0</span>
+                    <span id="minutes2" class="digit-box">0</span>
+                </div>
+                <div class="timer-label" data-lang-key="time_minutes">Minutes</div>
+            </div>
+            <div class="timer-box">
+                <div class="timer-value-container">
+                    <span id="seconds1" class="digit-box">0</span>
+                    <span id="seconds2" class="digit-box">0</span>
+                </div>
+                <div class="timer-label" data-lang-key="time_seconds">Seconds</div>
+            </div>
+        </div>
+
+        <p id="daily-quote" class="quote-text">
+            </p>
+
+        
+
+        <div class="main-name">
+            <h3 style="font-family: 'Herr Von Muellerhoff', cursive; font-size: 45px; font-weight: 100;">Tshering Doma</h3>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
