@@ -391,12 +391,16 @@ main {
     }
 
     .countdown {
-        gap: 10px;
+        gap: 10px; /* Reduced space between DAYS, HOURS, etc. */
+        width: 100%;
+        justify-content: space-evenly; /* Evenly space the items */
     }
 
-    .timer-box {
-        width: 150px;
-        height: 100px;
+    /* Make the individual digit boxes smaller */
+    .digit-box {
+        font-size: 1.5rem; /* Smaller font for the numbers */
+        width: 34px;      /* Reduced width of each number box */
+        padding: 12px 0;  /* Reduced vertical padding */
     }
 
     .timer-value {
